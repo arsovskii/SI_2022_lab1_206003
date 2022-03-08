@@ -1,5 +1,5 @@
-Apple
-Orange
-Pear
-Grape
-Pineapple
+Apple x 3
+Orange x 1
+Pear x 2
+Grape x 3
+Pineapple x1
