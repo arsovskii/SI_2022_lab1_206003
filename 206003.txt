@@ -1,0 +1,156 @@
+4. git clone https://github.com/arsovskii/SI_2022_lab1_206003.git 
+
+5. 
+    git add .  # ги додава сите нови или модификувани датотеки коишто се наоѓаат во работниот директориум
+    git commit -m "Add 5 items to the shopping list" # прави нов commit со соодветната порака
+
+6.
+    git add .
+    git commit -m "Add quantities to the items."
+
+7.
+    git branch branch1
+    git branch branch2 # креира нов branch со соодветно име
+
+8.
+        commit 53e92d43cbb8c179bb7bb1ade965d775974cceea (HEAD -> master, branch2, branch1)
+    Author: arsovskii <62434708+arsovskii@users.noreply.github.com>
+    Date:   Tue Mar 8 18:50:04 2022 +0100
+
+        Add quantities to the items.
+
+        commit d104a381ffa5b67a7f7d5321052b78572c066d6a
+    Author: arsovskii <62434708+arsovskii@users.noreply.github.com>
+    Date:   Tue Mar 8 18:40:56 2022 +0100
+
+        Add 5 items to the shopping list
+
+        commit a5132cde4565022b2a5bb63eaaf174dad239164f (origin/master, origin/HEAD)
+    Author: arsovskii <62434708+arsovskii@users.noreply.github.com>
+    Date:   Tue Mar 8 18:32:04 2022 +0100
+
+        Update README.md
+
+    commit dea67a733a76c70460da3c0c397558679ba8e2ec
+    Author: arsovskii <62434708+arsovskii@users.noreply.github.com>
+    Date:   Tue Mar 8 18:31:34 2022 +0100
+
+        Initial commit
+
+9.
+    git push origin * # прави push на сите гранки кон оддалечениот репозиториум на github
+
+10.
+    git checkout branch1
+
+11.
+    git add .
+    git commit -m "Change quantity of item #5"
+
+12.
+    git checkout master
+
+13. 
+    git add .
+    git commit -m "Change quantity of item #2"
+
+14.
+    git push origin *
+
+15.
+    git checkout branch2
+
+16.
+    git add .
+    git commit -m "Modify item #4"
+
+17.
+    git log
+
+        commit 2ceb38e4aff36ba1483093104e929d119e29b590 (HEAD -> branch2)
+    Author: arsovskii <62434708+arsovskii@users.noreply.github.com>
+    Date:   Tue Mar 8 19:17:40 2022 +0100
+
+        Modify item #4
+
+    commit 53e92d43cbb8c179bb7bb1ade965d775974cceea (origin/branch2)
+    Author: arsovskii <62434708+arsovskii@users.noreply.github.com>
+    Date:   Tue Mar 8 18:50:04 2022 +0100
+
+        Add quantities to the items.
+
+    commit d104a381ffa5b67a7f7d5321052b78572c066d6a
+    Author: arsovskii <62434708+arsovskii@users.noreply.github.com>
+    Date:   Tue Mar 8 18:40:56 2022 +0100
+
+        Add 5 items to the shopping list
+
+    commit a5132cde4565022b2a5bb63eaaf174dad239164f
+    Author: arsovskii <62434708+arsovskii@users.noreply.github.com>
+    Date:   Tue Mar 8 18:32:04 2022 +0100
+
+        Update README.md
+
+    commit dea67a733a76c70460da3c0c397558679ba8e2ec
+    Author: arsovskii <62434708+arsovskii@users.noreply.github.com>
+    Date:   Tue Mar 8 18:31:34 2022 +0100
+
+        Initial commit
+
+18.
+    git add .
+    git commit --amend -m "Modify item #4 and add item #6"
+
+19.
+    git log
+
+        commit 8ebafb542ae1d14d8fc8dfba55a95449ee7bec0c (HEAD -> branch2)
+    Author: arsovskii <62434708+arsovskii@users.noreply.github.com>
+    Date:   Tue Mar 8 19:17:40 2022 +0100
+
+        Modify item #4 and add item #6
+
+    commit 53e92d43cbb8c179bb7bb1ade965d775974cceea (origin/branch2)
+    Author: arsovskii <62434708+arsovskii@users.noreply.github.com>
+    Date:   Tue Mar 8 18:50:04 2022 +0100
+
+        Add quantities to the items.
+
+    commit d104a381ffa5b67a7f7d5321052b78572c066d6a
+    Author: arsovskii <62434708+arsovskii@users.noreply.github.com>
+    Date:   Tue Mar 8 18:40:56 2022 +0100
+
+        Add 5 items to the shopping list
+
+    commit a5132cde4565022b2a5bb63eaaf174dad239164f
+    Author: arsovskii <62434708+arsovskii@users.noreply.github.com>
+    Date:   Tue Mar 8 18:32:04 2022 +0100
+
+        Update README.md
+
+    commit dea67a733a76c70460da3c0c397558679ba8e2ec
+    Author: arsovskii <62434708+arsovskii@users.noreply.github.com>
+    Date:   Tue Mar 8 18:31:34 2022 +0100
+
+        Initial commit
+
+20.
+    git checkout master
+    git merge branch1
+    
+21.
+    git merge branch2  
+    #има конфликт, па после соодветна промена 
+    #последните два merge команди прават рекурзивен merge
+
+    git add .
+    git commit -m "Merge branch 'branch2'"
+    
+22.
+    git add .
+    git commit -m "Add docs"
+
+23. 
+    git push origin *
+
+
